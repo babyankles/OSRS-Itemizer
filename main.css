@@ -1,0 +1,76 @@
+.center-text {
+    text-align: center;
+}
+
+.outer {
+    background-image: url("images/Background.png");
+    margin: 20px auto;
+    width: 863px;
+    height: 1095px;
+}
+
+.name {
+    position: relative;
+    left: 25px;
+}
+
+.name input {
+    margin-left: 10px;
+}
+
+.table {
+    position: relative;
+    left: 27px;
+    top: 25px;
+    border-spacing: 0;
+}
+
+.cell {
+    width: 31px;
+    height: 35px;
+    padding: 0;
+}
+
+.cell.off {
+    background-image: none;
+}
+
+.cell.on {
+    background-image: url("images/Foreground.png");
+}
+
+.cell.offdiary {
+    background-image: url("images/Easy Back.png");
+}
+
+.cell.easydiary {
+    background-image: url("images/Easy Front.png");
+}
+
+.cell.meddiary {
+    background-image: url("images/Medium Front.png");
+}
+
+.cell.harddiary {
+    background-image: url("images/Hard Front.png");
+}
+
+.cell.elitediary {
+    background-image: url("images/Elite Front.png");
+}
+
+.cell input[type="number"] {
+    margin: auto;
+    width: 90%;
+}
+
+/* Taken from http://www.fonts2u.com/runescape-bold-font-regular.font */
+@font-face {
+    font-family:"RuneScape Bold Font Regular";
+    src: url("fonts/runescape_bold_font.eot?") format("eot"),
+        url("fonts/runescape_bold_font.woff") format("woff"),
+        url("fonts/runescape_bold_font.ttf") format("truetype"),
+        url("fonts/runescape_bold_font.svg#RuneScape-Bold-Font") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
