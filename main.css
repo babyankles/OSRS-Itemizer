@@ -10,6 +10,7 @@
 }
 
 .name {
+    display: inline-block;
     position: relative;
     left: 25px;
 }
