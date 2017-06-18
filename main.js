@@ -104,7 +104,8 @@ $(function() {
   
   //name change
   $('#rsn').change(function() {
-    rsn = this.value;
+    rsn = this.value.trim();
+    this.value = rsn;
     localStorage.setItem('rsn',rsn);
   });
   
@@ -156,8 +157,10 @@ $(function() {
     for(let clue in cluecounts) {
       ctx.fillText(cluecounts[clue],(clues[clue]+count++)*cellwidth-topleft.x,(cluerow+1)*cellheight-topleft.y);
     }
-    ctx.textAlign = "start";
-    ctx.fillText('RSN: '+rsn,25,canvas.height-25);
+    if(rsn) {
+      ctx.textAlign = "start";
+      ctx.fillText('RSN: '+rsn,25,canvas.height-25);
+    }
     
     let a = document.createElement('a');
     a.href = canvas.toDataURL();
